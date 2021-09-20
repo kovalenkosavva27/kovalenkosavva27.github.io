@@ -2,178 +2,184 @@
 
 <html>
 
-  <head>
+<head>
     <title>Ширина, выравнивание, float</title>
-	<link rel="stylesheet" href="style.css">
-  </head>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-  <!-- по умолчанию body блочный элемент, занимает 100% ширины родительского элемента html и имеет небольшой отступ margin по краям -->
-  <body style="margin:0;">
+<!-- по умолчанию body блочный элемент, занимает 100% ширины родительского элемента html и имеет небольшой отступ margin по краям -->
+
+<body style="margin:0;">
 
     <!-- этот блок будет тянуться по ширине окна -->
-	<header>
-	<div class="container">
-    <div class="head"> 
-      <!-- картинка обтекает текст слева -->
-      <img class="photo" src="me.jpg" alt="Описание картинки для скрин-ридеров и поисковиков" />
-      <!-- этот блок, как положено блочному элементу по умолчанию, займет всю оставшуюся ширину родительского элемента -->
-      <div class = "h1"><h2>Коваленко Савва 27/1</h2></div>
-    </div>
-	</div>
-	</header>
-	<nav>
-      <div class="container">
-        <div class="nav-menu">
-          <ul class="navigation">
-            <li><a href="#"> Ссылка 1</a></li>
-            <li><a href="#"> Ссылка 2</a></li>
-            <li><a href="#"> Ссылка 3</a></li>
-          </ul>
+    <header>
+        <div class="container">
+            <div class="head">
+                <!-- картинка обтекает текст слева -->
+                <img class="photo" src="me.jpg" alt="Описание картинки для скрин-ридеров и поисковиков" />
+                <!-- этот блок, как положено блочному элементу по умолчанию, займет всю оставшуюся ширину родительского элемента -->
+                <div class="h1">
+                    <h2>Коваленко Савва 27/1</h2>
+                </div>
+            </div>
         </div>
-      </div>
+    </header>
+    <nav>
+        <div class="container">
+            <div class="nav-menu">
+                <ul class="navigation">
+                    <li><a href="#"> Ссылка 1</a></li>
+                    <li><a href="#"> Ссылка 2</a></li>
+                    <li><a href="#"> Ссылка 3</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-	
+
     <!-- этот блок будIет ограничен по ширине и горизонтально выровнен по центру родительского элемента -->
     <div class="content">
-      <div class="container">
-	  <h2 class="h1">Нумерованный список</h2>
-        <ol id="list">
-        <li><a href="http://example.com/" target="_blank"> Ссылка на главную страницу</a></li>
-       
-        <li><a href="https://example.com/" target="_blank"> Ссылка на главную страницу в протоколе https</a></li>
-        <li><a href="ftp://example.com/file.txt"> Ссылка на файл на сервере FTP без авторизации</a></li>
-        <li><a href="ftp://savva:pass123@example.com/file.txt"> Ссылка на файл на сервере FTP с авторизацией</a></li>
-        <li><a href="https://example.com/contacts#tel"> Ссылка на фрагмент страницы некоторого сайта</a></li>
-        <li><a href="#list"> Ссылка на фрагмент текущей страницы</a></li>
-        <li><a href="https://someshop.ru/catalog/iphone?page=1&id=20"> Ссылка с двумя параметрами в URL</a></li>
-        <li>
-            <ul>
-                <li><a href="#form" title="form"> Form</a></li>
-                <li><a href="#list" title="nspisok"> Нумерованный список</a></li>
-            </ul>
-        </li>
-		 <li><a> Без href</a></li>
-		 <li><a href="#" title="nothing">Ссылка с пустым href </a></li>
-		 <li><a href="#" title="nofollow" rel="nofollow" >Ссылка, по которой запрещен переход поисковикам </a></li>
-		 <li><noindex><a href="#" title="noindex" >Ссылка, запрещенная для индексации поисковиками </a> </noindex> </li> 
-		 <li><p>Абзац<a href="http://example.com/" target="_blank"> Ссылка на главную страницу, контекстная в тексте абзаца</a></p></li>
-		  <li><a href="http://example.com/" title="img.jpg" target="_blank"><img src="Malenkie-7.jpg" width="100" height="111"> </a></li>
-		  <li><img src="1560231206_1.jpg" width="100" height="111" usemap="#image-map">
-               <map name="image-map">
-          <area target="_blank" alt="" title="" href="" coords="" shape="rect">
-</map></li>
-        <li><a href="main" title="относительная ссылка"> catalog </a></li>
-        <li><a href="./about/main" title="относительная ссылка в каталоге about"> относительная ссылка на страницу в каталоге about </a></li>
-        <li><a href="../catalog/text" title="относительная ссылка уровнем выше"> относительная ссылка уровнем выше </a></li>
-        <li><a href="../../catalog/text" title="относительная ссылка двумя уровнями выше"> относительная ссылка двумя уровнями выше </a></li>
-		 <li><a href="/" target="_blank"> Ссылка на главную страницу(сокращенная)</a></li>
-		 <li><a href="/main" target="_blank"> Ссылка на внутреннюю страницу(сокращенная)</a></li>
-        <hr />
-        <table class="main-table">
-          <tr>
-            <th>x</th>
-            <th>y</th>
-            <th>int</th>
-          </tr>
-          <tr>
-            <td colspan="3">cos(x)^2</td>
-          </tr>
-          <tr>
-            <td>-3.14</td>
-            <td>1</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>5.756</td>
-            <td>0.75</td>
-            <td>0.75</td>
-          </tr>
-          <tr>
-            <td>3.14</td>
-            <td>1</td>
-            <td>1</td>
-          </tr>
-        </table>
-        <hr />
-        <h2 class="h1"; id="form">Форма</h2>
+        <div class="container">
+            <h2 class="h1">Нумерованный список</h2>
+            <ol id="list">
+                <li><a href="http://example.com/" target="_blank"> Ссылка на главную страницу</a></li>
 
-   <form action="/"; class ="form"; method="POST">
+                <li><a href="https://example.com/" target="_blank"> Ссылка на главную страницу в протоколе https</a>
+                </li>
+                <li><a href="ftp://example.com/file.txt"> Ссылка на файл на сервере FTP без авторизации</a></li>
+                <li><a href="ftp://savva:pass123@example.com/file.txt"> Ссылка на файл на сервере FTP с авторизацией</a>
+                </li>
+                <li><a href="https://example.com/contacts#tel"> Ссылка на фрагмент страницы некоторого сайта</a></li>
+                <li><a href="#list"> Ссылка на фрагмент текущей страницы</a></li>
+                <li><a href="https://someshop.ru/catalog/iphone?page=1&id=20"> Ссылка с двумя параметрами в URL</a></li>
+                <li>
+                    <ul>
+                        <li><a href="#form" title="form"> Form</a></li>
+                        <li><a href="#list" title="nspisok"> Нумерованный список</a></li>
+                    </ul>
+                </li>
+                <li><a> Без href</a></li>
+                <li><a href="#" title="nothing">Ссылка с пустым href </a></li>
+                <li><a href="#" title="nofollow" rel="nofollow">Ссылка, по которой запрещен переход поисковикам </a>
+                </li>
+                <li>
+                    <a href="#" title="noindex" rel="noindex">Ссылка, запрещенная для индексации поисковиками </a> 
+                </li>
+                <li>
+                    <p>Абзац<a href="http://example.com/" target="_blank"> Ссылка на главную страницу, контекстная в
+                            тексте абзаца</a></p>
+                </li>
+                <li><a href="http://example.com/" title="img.jpg" target="_blank"><img src="Malenkie-7.jpg" width="100"
+                            height="111" alt="лис"> </a></li>
+                <li><img src="1560231206_1.jpg" width="100" height="111" usemap="#image-map">
+                    <map name="image-map">
+                        <area target="_blank" alt="" title="" href="" coords="129,239,87" shape="circle">
+                    </map>
+                </li>
+                <li><a href="main" title="относительная ссылка"> catalog </a></li>
+                <li><a href="./about/main" title="относительная ссылка в каталоге about"> относительная ссылка на
+                        страницу в каталоге about </a></li>
+                <li><a href="../catalog/text" title="относительная ссылка уровнем выше"> относительная ссылка уровнем
+                        выше </a></li>
+                <li><a href="../../catalog/text" title="относительная ссылка двумя уровнями выше"> относительная ссылка
+                        двумя уровнями выше </a></li>
+                <li><a href="/" target="_blank"> Ссылка на главную страницу(сокращенная)</a></li>
+                <li><a href="/main" target="_blank"> Ссылка на внутреннюю страницу(сокращенная)</a></li>
+                <hr />
+                <table class="main-table">
+                    <tr>
+                        <th>x</th>
+                        <th>y</th>
+                        <th>int</th>
+                    </tr>
+                    <tr>
+                        <td colspan="3">cos(x)^2</td>
+                    </tr>
+                    <tr>
+                        <td>-3.14</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>5.756</td>
+                        <td>0.75</td>
+                        <td>0.75</td>
+                    </tr>
+                    <tr>
+                        <td>3.14</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+                <hr />
+                <h2 class="h1" ; id="form">Форма</h2>
 
-      <label>
-        Введите имя:<br />
-        <input name="field-name-1"
-          value="С.Г.Снинца" />
-      </label><br />
+                <form action="/" ; class="form" ; method="POST">
 
-      <label>
-        Введите email:<br />
-        <input name="field-email"
-          value="savva@example.com"
-          type="email" />
-      </label><br />
+                    <label>
+                        Введите имя:<br />
+                        <input name="field-name-1" value="С.Г.Снинца" />
+                    </label><br />
 
-      <label>
-        Укажите дату вашего рождения:<br />
-        <input name="field-date"
-          value="2002-01-25"
-          type="date" />
-      </label><br />
-      
-	   Укажите ваш пол:<br />
-      <label><input type="radio" checked="checked"
-        name="radio-group-1" value="Женский" />
-        Женский</label>
-      <label><input type="radio"
-        name="radio-group-1" value="Мужской" />
-        Мужской</label><br />
-		
-         Укажите количество ваших конечностей:<br />
-      <label><input type="radio" checked="checked"
-        name="radio-group-2" value="0" />
-        Нет конечностей</label>
-      <label><input type="radio"
-        name="radio-group-2" value="1" />
-        Одна рука||одна нога</label><br />
-	  <label><input type="radio"
-        name="radio-group-2" value="2" />
-        Две руки, нет ног||две ноги, нет рук|| одна рука и одна нога</label><br />
-      <label>
-	  <label><input type="radio"
-        name="radio-group-2" value="3">
-        Две руки, одна нога||две ноги, одна рука||три руки||три ноги</label><br />
-		
-		<label><input type="radio"
-        name="radio-group-2" value="4" />
-        Не инвалид|| другое</label><br />
-		<label><input type="radio"
-        name="radio-group-2" value="8" />
-        Больше, чем надо</label><br />
-		
-		<label>
-        Список ваших суперспособностей:<br />
-        <select name="field-name-3">
-          <option value="бессмертие">бессмертие</option>
-          <option value="прохождение сквозь стены" selected="selected">прохождение сквозь стены</option>
-          <option value="левитация">левитация</option>
-        </select>
-      </label><br />
-       <label> 
-	       Ваша биография :<br />
-        <textarea name="field-name-2">Расскажите о себе</textarea>
-      </label><br />
+                    <label>
+                        Введите email:<br />
+                        <input name="field-email" value="savva@example.com" type="email" />
+                    </label><br />
 
-     <label> С контрактом ознакомлен:  <input type="checkbox" checked="checked" name="check-1" /><br />
-      </label><br />
+                    <label>
+                        Укажите дату вашего рождения:<br />
+                        <input name="field-date" value="2002-01-25" type="date" />
+                    </label><br />
 
-      
-     <label> <input type="submit" value="Отправить данные" /></label>
-    </form>
-      </div>
+                    Укажите ваш пол:<br />
+                    <label><input type="radio" checked="checked" name="radio-group-1" value="Женский" />
+                        Женский</label>
+                    <label><input type="radio" name="radio-group-1" value="Мужской" />
+                        Мужской</label><br />
+
+                    Укажите количество ваших конечностей:<br />
+                    <label><input type="radio" checked="checked" name="radio-group-2" value="0" />
+                        Нет конечностей</label>
+                    <label><input type="radio" name="radio-group-2" value="1" />
+                        Одна рука||одна нога</label><br />
+                    <label><input type="radio" name="radio-group-2" value="2" />
+                        Две руки, нет ног||две ноги, нет рук|| одна рука и одна нога</label><br />
+                    
+                        <label><input type="radio" name="radio-group-2" value="3">
+                            Две руки, одна нога||две ноги, одна рука||три руки||три ноги</label><br />
+
+                        <label><input type="radio" name="radio-group-2" value="4" />
+                            Не инвалид|| другое</label><br />
+                        <label><input type="radio" name="radio-group-2" value="8" />
+                            Больше, чем надо</label><br />
+
+                        <label>
+                            Список ваших суперспособностей:<br />
+                            <select name="field-name-3">
+                                <option value="бессмертие">бессмертие</option>
+                                <option value="прохождение сквозь стены" selected="selected">прохождение сквозь стены
+                                </option>
+                                <option value="левитация">левитация</option>
+                            </select>
+                        </label><br />
+                        <label>
+                            Ваша биография :<br />
+                            <textarea name="field-name-2">Расскажите о себе</textarea>
+                        </label><br />
+
+                        <label> С контрактом ознакомлен: <input type="checkbox" checked="checked"
+                                name="check-1" /><br />
+                        </label><br />
+
+
+                        <label> <input type="submit" value="Отправить данные" /></label>
+                </form>
+        </div>
     </div>
-<footer>
- <div class="container"><h2>(c)Коваленко Савва 27/1</h2></div>
-</footer>
-  </body>
+    <footer>
+        <div class="container">
+            <h2>(c)Коваленко Савва 27/1</h2>
+        </div>
+    </footer>
+</body>
 
-</html> 
-
+</html>
