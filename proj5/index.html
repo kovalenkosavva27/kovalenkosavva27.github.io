@@ -192,6 +192,22 @@
                         <label> <input type="submit" value="Отправить данные" /></label>
                 </form>
             </div>
+            <div class="form"> 
+                <label>
+                Цена:
+                <br />
+                <input id="price" type="text" name="field-name" placeholder="Введите цену товара">
+            </label> <br />
+            <label>
+                Кол-во товаров:
+                <br />
+                <input id="quantity" type="text" name="field-name" placeholder="Введите кол-во товаров">
+            </label>
+            <br />
+            <button onclick="calculator()">Посчитать</button>
+            <p>Итоговая стоимость: </p>
+            <p id="result"></p></div>
+           
         </div>
     </div>
     <footer>
@@ -199,6 +215,7 @@
             <h2>(c)Коваленко Савва 27/1</h2>
         </div>
     </footer>
+    <script src="Calculated.js"></script>
 </body>
 
 </html>
