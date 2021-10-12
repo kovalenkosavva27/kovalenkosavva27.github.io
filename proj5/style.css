@@ -10,6 +10,10 @@ header{
   max-width: 100%;
 margin: 0;
 }
+.container.flex{
+display:flex;
+flex-direction:column;
+}
 .head{
 width:100%;
 padding: 10px; 
