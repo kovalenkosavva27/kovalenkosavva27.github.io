@@ -192,7 +192,7 @@
                         <label> <input type="submit" value="Отправить данные" /></label>
                 </form>
             </div>
-            <div class="calc container ss3 p-3 mb-3 col-md-8  order-2 order-md-3 text-center"></div>
+            <div class="calc container ss3 p-3 mb-3 col-md-8  order-2 order-md-3 text-center"> 
                 <label>
                 Цена:
                 <br />
@@ -207,6 +207,32 @@
             <button onclick="calculator()">Посчитать</button>
             <p>Итоговая стоимость: </p>
             <p id="result"></p></div>
+            <div class="calc container ss3 p-3 mb-3 col-md-8  order-2 order-md-3 text-center">
+    
+        Выберите товар:<br />
+        <select id="types" onchange="turbo()">
+            <option value="0">Выбрать</option>
+            <option value="129990">MacBook Pro 13''</option>
+            <option value="189990">MacBook Pro 14''</option>
+            <option value="234990">MacBook Pro 16''</option>
+        </select><br />
+        <div id="radios" onchange="turbo()" style="display:none;" >
+            <label><input type="radio" name="radiolimb" value="0" />
+                SSD-1TB</label>
+            <label><input type="radio"  name="radiolimb" value="40000" />
+                SSD-2TB</label>
+            <label><input type="radio"  name="radiolimb" value="220000" />
+                SSD-8TB</label></div>
+                <div class="mr-3" id="boxes" style="display:none;">
+                    <label><input type="checkbox" onchange="turbo()" id="check" value="40000"> 64 ГБ объединенной памяти</label>
+                </div>
+    <label>
+        Кол-во товаров:
+        <br />
+        <input id="quantitys" oninput="turbo()" value="1" type="text" name="field-name" placeholder="Введите кол-во товаров"></label><br />
+    <p>Итоговая стоимость: </p>
+    <p id="results"></p>
+</div>
            
         </div>
     </div>
@@ -216,6 +242,7 @@
         </div>
     </footer>
     <script src="Calculated.js"></script>
+    <script src="SuperCalc.js"></script>
 </body>
 
 </html>
