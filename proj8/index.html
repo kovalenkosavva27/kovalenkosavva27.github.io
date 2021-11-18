@@ -4,7 +4,6 @@
 
 <head>
      <link rel="stylesheet" href="style.css">
-     
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
      <meta charset="UTF-8">
@@ -18,7 +17,15 @@
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
      crossorigin="anonymous"></script>
-     <title><Ex 4></Ex></title>
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+     <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+     <script defer src="form.js"></script>
+      
+     <title><Ex 7></Ex></title>
    
 </head>
 
@@ -232,28 +239,68 @@
         <input id="quantitys" oninput="turbo()" value="1" type="text" name="field-name" placeholder="Введите кол-во товаров"></label><br />
     <p>Итоговая стоимость: </p>
     <p id="results"></p>
-</div>
+</div >
         
 <div class="slider">
         
-    <img src="https://s82079.cdn.ngenix.net/VnEgcf2wCjgJZQeR58mvtzUB.png?dw=230" alt="Natural">
-    <img src="https://s82079.cdn.ngenix.net/wK4fLvNXD4NKZJUrVgjPV383.png?dw=230" alt="Natural">
-    <img src="https://s82079.cdn.ngenix.net/1eKMTpqmU4kfM7CXsJZc3VWF.png?dw=230" alt="Natural">
-    <img src="https://s82079.cdn.ngenix.net/X4eyRrugynKehEm2Wr8YEZeo.png?dw=230" alt="Natural">
-    <img src="https://s82079.cdn.ngenix.net/U4Fj8i4B2k1R6Vh7jZPRSo3d.png?dw=230" alt="Natural">
-    <img src="https://s82079.cdn.ngenix.net/ummzRoj4czYfqzSQBKUmx7dP.png?dw=230" alt="Natural">
-    <img src="https://s82079.cdn.ngenix.net/HhmEJfoxHjknW4nhEM3HmHs2.png?dw=230" alt="Natural">
-    <img src="https://s82079.cdn.ngenix.net/7eM97nAz7pXzSbTNHPaC76VT.png?dw=230" alt="Natural">
-    <img src="https://s82079.cdn.ngenix.net/zL17VTLpingzgYXNM92caMmT.png?dw=230" alt="Natural">
-    <img src="https://s82079.cdn.ngenix.net/8ju4v3Q9mQppShTxm8MBBXzs.png?dw=230" alt="Natural">
-    <img src="https://s82079.cdn.ngenix.net/EzBv7o1KZJH31f1wLznix1hF.png?dw=230" alt="Natural">
-    <img src="https://s82079.cdn.ngenix.net/jhBxUJGVCNKRk2Ar2KYLsRAo.png?dw=230" alt="Natural">
-    <img src="https://s82079.cdn.ngenix.net/JTWWpYJnJAEQMvb6RmSZbNXQ.png?dw=230" alt="Natural">
-    <img src="https://s82079.cdn.ngenix.net/8y2VuNHBecNA5p7uetrUSPnu.png?dw=230" alt="Natural">
-    <img src="https://s82079.cdn.ngenix.net/qUNiUpyoHcsBjw4r4xikA6os.png?dw=230" alt="Natural">
-    <img src="https://s82079.cdn.ngenix.net/uRJEfMf8H6iPKsE2EJ4sQLTn.png?dw=230" alt="Natural">
+    <img src="im/m1.jpg" alt="Natural">
+    <img src="im/m2.jpg" alt="Natural">
+    <img src="im/m3.jpg" alt="Natural">
+    <img src="im/m4.jpg" alt="Natural">
+    <img src="im/m5.jpg" alt="Natural">
+    <img src="im/m6.jpg" alt="Natural">
+    <img src="im/m7.jpg" alt="Natural">
+    <img src="im/m8.jpg" alt="Natural">
+    <img src="im/m9.jpg" alt="Natural">
+    <img src="im/m10.jpg" alt="Natural">
+    <img src="im/m11.jpg" alt="Natural">
+    <img src="im/m12.jpg" alt="Natural">
+    <img src="im/m13.jpg" alt="Natural">
+    <img src="im/m14.jpg" alt="Natural">
+    <img src="im/m15.jpg" alt="Natural">
+    <img src="im/m16.jpg" alt="Natural">
 </div>
-        </div>
+
+        
+    </div>
+
+    <h1 class="title">Форма</h1>
+    <button class="openBtn">Открыть</button>
+    <div class="hiddenDiv" id="hiddenDiv">
+      <div class="formDiv">
+        <form id="form" action="https://formcarry.com/s/bpETTVmoGY2" method="POST" accept-charset="UTF-8">
+          <h2 class="titleOfForm">Форма</h2>
+          <label for="name">
+            Имя:
+            <input name="name" id="name" placeholder="Введите имя" />
+          </label>
+          <br />
+          <label for="email">
+            Email:
+            <input type="email" id="email" name="email" placeholder="Введите email" />
+          </label>
+          <br />
+          <label for="message">
+            Сообщение:<br />
+            <textarea id="message" name="message" placeholder="Ваше сообщение"></textarea>
+          </label>
+          <br />
+          <label for="checkbox">
+            Согласен(-на) на обработку персональных данных.
+            <input type="checkbox" id="checkbox" name="checkbox" />
+          </label>
+          <br />
+          <button class="sendBtn">Отправить</button>
+          <input type="submit" id="sendBtn" name="sendBtn" value="Отправить" disabled />
+        </form>
+        <button class="closeBtn">Закрыть</button>
+      </div>
+    </div>
+    <div class="hiddenResponse">
+      <div class="resForm">
+        <p class="ans">Успешно</p>
+        <button class="close" id="cl">Закрыть</button>
+      </div>
     </div>
     <footer>
         <div class="container">
@@ -262,9 +309,7 @@
     </footer>
     <script src="Calculated.js"></script>
     <script src="SuperCalc.js"></script>
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script defer src="form.js"></script>
     <script src="galary.js"></script>
 </body>
 
